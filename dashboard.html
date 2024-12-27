@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard- FBS</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script src="https://kit.fontawesome.com/1eb4411010.js"></script>
+        <style>
+            h3{
+                margin: 0px;
+            }
+        </style>
+    </head>
+    </head>
+    <body>
+    <div id="dashboardmaincontainer">
+        <div class="dashboard_sidebar" id="dashboard_sidebar">
+            <h3 class="dashboard_logo" id="dashboard_logo">FBS</h3>
+            <div class="dashboard_sidebar_user">
+                <span>NATALIA</span>
+
+            </div>
+            <div class="dashboard_sidebar_user_menus">
+                <ul class="dashboard_menu_list">
+                    <li>
+                        <a href=""><i class="fa fa-dashboard"></i> <span class="menutext">Dashboard</span></a>
+                    </li>
+                    <li class="activemenu">
+                        <a href=""><i class="fa fa-hand-holding-dollar"></i><span class="menutext">Donations</span></a>
+                    </li>
+                    <li class="activemenu">
+                        <a href=""><i class="fa fa-money-bill"></i><span class="menutext">Revenue Management </span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard_content_container" id="dashboard_content_container">
+            <div class="dashboard_content_top">
+                <a href="" id="togglebutton"><i class="fa fa-bars"></i></a> 
+                <a href="" id="logoutbutton"><i class="fa fa-power-off"></i>Log-out</a> 
+            </div>
+            <div class="dashboard_content">
+                <div class="dashboard_content_main">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var sidebarisOpen = true;
+            togglebutton.addEventListener( 'click', (event) => {
+                event.preventDefault();
+                if (sidebarisOpen){
+                dashboard_sidebar.style.width = '20%';
+                dashboard_content_container.style.width = '90%';
+                dashboard_logo.style.fontSize = '60px';
+                menuIcons =document.getElementsByClassName('menutext');
+                for(var i=0; i < menuIcons.length; i++){
+                    menuIcons[i].style.display = 'none';
+                }
+                document.getElementsByClassName('dashboard_menu_list')[0].style.textAlign = 'center';
+            } else {
+                dashboard_sidebar.style.width = '20%';
+                dashboard_content_container.style.width = '80%';
+                dashboard_logo.style.fontSize = '80px';
+                menuIcons =document.getElementsByClassName('menutext');
+                for(var i=0; i < menuIcons.length; i++){
+                    menuIcons[i].style.display = 'inline-block';
+                }
+                document.getElementsByClassName('dashboard_menu_list')[0].style.textAlign = 'left'; 
+                sidebarisOpen = true; 
+            }
+            });
+        </script>
+    </body>
+</html>

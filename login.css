@@ -55,8 +55,23 @@ div.input label{
   
   div.header{
     width:100%;
-    height: 20px;
-    background: brown;
+    height: 50px;
+    background: coral;
+    text-align: right;
+    padding: 10px 0px ;
+  }
+  div.header a{
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  div.header a:hover{
+    border-radius: 5px;
+    border: 2px solid white;
+
   }
   div.banner{
     background:url(istockphoto-1311051864-612x612.jpg)no-repeat center center fixed;
@@ -65,10 +80,7 @@ div.input label{
     left: 0;
     width: 100%;
     height: 300px;
-    /* padding-top: 100px;
-    padding-bottom: 100px;
-    margin: 0px auto;  */
- 
+
   } 
   div.homepageConainer{
     width: 100%;
@@ -125,3 +137,82 @@ div.input label{
     text-align: center;
     
   }
+  /* dashoard */
+  #dashboardmaincontainer{
+    display: flex;
+    flex-direction: row;
+  }
+  div.dashboard_sidebar{
+    width: 20%;
+    background: peachpuff;
+    height: 100vh;
+  }
+  div.dashboard_content_container{
+    width: 80%;
+    background: whitesmoke;
+  }
+  h3.dashboard_logo{
+    color: coral;
+    font-size: 80px;
+    text-align: center;
+  }
+  div.dashboard_sidebar_user span{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:coral;
+    display: inline-block;
+  }
+div.dashboard_sidebar_user{
+  margin-top:25px;
+  position: relative;
+  border-bottom: 2px solid coral;
+  padding-bottom: 8px;
+  border-color: white;
+}
+ul.dashboard_menu_list{
+  padding: 20px;
+  margin-top: 8px;
+}
+ul.dashboard_menu_list li{
+  padding:15px 0px ;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+ul.dashboard_menu_list li a{
+text-decoration: none;
+color: coral;
+height: 100%;
+display: block;
+font-size: 20px;
+
+}
+ul.dashboard_menu_list li:hover{
+  background:brown;
+  color: #fff;
+  transition: 0.3s all;
+}
+ul.dashboard_menu_list li a.activemenu{
+  background:brown;
+  color: #fff;
+}
+div.dashboard_content_top{
+  background:white;
+  padding: 20px;
+}
+div.dashboard_content_top{
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+}
+a#logoutbutton{
+  float: right;
+}
+div.dashboard_content{
+  padding: 50px 10px 10px 10px;
+}
+div.dashboard_content_main{
+  height: 100%;
+  min-height: 800px;
+
+}
