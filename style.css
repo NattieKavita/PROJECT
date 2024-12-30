@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;            
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
   margin-top: 0px;
@@ -303,3 +303,135 @@ footer .copyright{
 }
 
 }
+/* donation section */
+#pageheader{
+  background-image:url(Leaves.png) ;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.pricing-box {
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.pricing-box h3 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+
+.pricing-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.pricing-box ul li {
+  margin-bottom: 5px;
+  
+}
+
+/* about section */
+#pageheader.aboutheader{
+  background-image: url(blue.png);
+
+}
+#about-header img{
+  width: 50%;
+  height: auto;
+}
+#about-header{
+  display: flex;
+  align-items: center;
+}
+#about-header div{
+  padding-left: 40px;
+}
+#about-features h3{
+  margin: 0%;
+
+}
+
+@media(max-width:477px){
+  #about-header{
+    flex-direction: column;
+  
+  }
+  #about-header img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #about-header div{
+    padding-left: 0px;
+  }
+}
+/* contact section */
+#contactdetails{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contactdetails .details{
+  width: 40%;
+
+}
+#contactdetails .details span{
+  font-size: 12px;
+}
+
+#contactdetails .details h2{
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+#contactdetails .details h3{
+  font-size: 16px;
+  padding-bottom: 15px;
+
+}
+
+#contactdetails .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+ #contactdetails .details li p{
+  margin: 0;
+  font-size: 14px;
+
+}
+ #contactdetails .details li i{
+  font-size: 14px;
+  padding-right: 22px; 
+}
+#contactdetails .map{
+  width: 55%;
+  height:400px;
+}
+#contactdetails .map iframe{
+  width: 100%;
+  height:100%;
+}   
+@media(max-width:477px){
+  #contactdetails{
+    flex-direction: column;
+  }
+  #contactdetails .details{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #contactdetails .map{
+    width: 100%;
+  }
+}              
